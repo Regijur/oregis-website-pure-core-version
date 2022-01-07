@@ -1,0 +1,241 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Sarala:wght@400;700&display=swap');
+
+/* General */
+*{
+     font-family: 'Sarala', 'sans-serif';
+}
+
+.flex-collumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid{
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.withIndent{
+    text-indent: 10px;
+}
+
+h1, h2, h3{
+     font-family: 'Cabin', 'sans-serif';
+}
+html, body {
+     width: 100%;
+     height: 100%;
+}
+
+article {
+     min-height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+}
+
+main {
+     flex-grow: 1;
+}
+
+header, main, footer {
+     flex-shrink: 0;
+}
+
+*{
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+
+
+body{
+    background-color: #0c2731;
+     height: 100%;
+}
+
+
+/* Header */
+
+header{
+     height: auto;
+     width: 100vw;
+     background: linear-gradient(to bottom, #031319,  #010608);
+     padding: 10px 0px;
+     border-bottom: 5px solid #ee0823;
+     color: #eee;
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+header .normal{
+     font-size: 14px;
+     font-weight: 400;
+}
+/* Link List */
+
+header ul{
+     display: flex;
+     margin-right: 20px;
+}
+
+header ul li a{
+     display: block;
+     padding: 20px;
+     color: #ee0823;
+     font-size: 18pt;
+     transition: color .4s ease;
+}
+
+header ul li a:hover{
+     color: #eee;
+}
+
+/* Author Name */
+
+div .name{
+     padding-top: 15px;
+     color: #ee0823;
+     font-size: 3rem;
+     text-align: center;
+}
+
+header div{
+     color: #ee0823;
+}
+
+header div h3{
+     margin-left: 20px;
+}
+
+ /*Footer*/
+ footer {
+     border-top: solid 5px #031319;
+     height: auto;
+     width: 100vw;
+     padding-top: 40px; 
+     background-color: #ee0823;
+     color: #eee;
+ }
+
+ .footer-content{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ .footer-content h3{
+     font-size: 1.8rem;
+     font-weight: 400;
+     text-transform: capitalize;
+     line-height: 3rem; 
+ }
+
+ .footer-content p{
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 14px;
+ }
+
+ .social{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0 3rem 0;
+ }
+
+ .social li{
+     margin: 0 10px;
+ }
+
+ .social li a{
+     text-decoration: none;
+     color: #eee;
+ }
+
+ .social li a i{
+     font-size: 1.5rem;
+     transition: color .4s ease;
+ }
+
+ .social li a:hover{
+     color: #031319;
+ }
+
+ .footer-bottom{
+     width: 100vw;
+     background-color: rgb(168, 3, 3);
+     padding: 20px 0px;
+     text-align: center;
+ }
+
+ .footer-bottom p{
+     font-size: 14px;
+     word-spacing: 2px;
+     text-transform: capitalize;
+ }
+
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: 0.4;
+     font-weight: 400;
+ }
+
+ /* Card Game */
+ 
+ .cardGame{
+    flex-wrap: nowrap;
+    height: auto;
+    margin: 30px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: #031319;
+    border-radius: 40px;
+    border: solid #ccc 5px;
+ }
+
+ .cardGame div, .cardGame img{
+     margin: 40px 20px;
+ }
+
+ .cardGame .gameBanner{
+    height: 85vh;
+    border: #ccc solid 5px;
+    border-radius: 40px;
+ }
+ .cardGame .gameInfo{
+    border: 5px #ee0823 solid;
+    border-radius: 40px;
+    height: 85vh;
+    color: #031319;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #ccc;
+ }
+
+ .cardGame .gameInfo .gameName{
+     text-align: center;
+     padding-bottom: 15px;
+     font-size: 1.5rem;
+ }
+
+ .cardGame .gameInfo .gameDescription{
+     text-align: justify;
+ }

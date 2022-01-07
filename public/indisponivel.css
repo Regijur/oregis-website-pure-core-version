@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Sarala:wght@400;700&display=swap');
+
+*{
+    font-family: 'Sarala', 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #ee0823;
+    transition: color .8s ease;
+}
+
+a:hover{
+    color: #0c2731;
+}
+
+h2{
+    padding: 20px 0px;
+}
+
+p{
+    text-indent: 20px;
+    padding: 0px 150px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+body{
+    color: #ee0823;
+    background-color: #0c2731;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Equi{
+    background-color: #bbb;
+    border-radius: 40px;
+    border: #ee0823 solid 5px;
+    margin: 50px 200px;
+}
+
