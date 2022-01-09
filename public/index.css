@@ -73,6 +73,7 @@ html,body{
 
 header{
      height: auto;
+     min-height: 80px;
      width: 100vw;
      background: linear-gradient(to bottom, #031319,  #010608);
      padding: 1rem 0rem;
@@ -147,7 +148,7 @@ header div h3{
  }
 
  .footer-content h3{
-     font-size: 1.8rem;
+     font-size: 2.5rem;
      font-weight: 400;
      text-transform: capitalize;
      line-height: 3rem; 
@@ -158,7 +159,7 @@ header div h3{
      width: 100%;
      margin: 1rem auto;
      line-height: 2.8rem;
-     font-size: 1.4rem;
+     font-size: 1.5rem;
  }
 
  .social{
@@ -179,7 +180,7 @@ header div h3{
  }
 
  .social li a i{
-     font-size: 1.5rem;
+     font-size: 3rem;
      transition: color .4s ease;
  }
 
@@ -210,20 +211,20 @@ header div h3{
  
  .cardGame{
     display: grid;
-    grid-template-columns: repeat(autofit, 400px, 500px);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "b d";
     height: auto;
     min-height: 600px;
-    width: 100vw;
-    max-width: 1200px;
-    margin: 3rem;
+    width: 95vw;
+    margin: 3rem 0rem;
     align-self: center;
-    justify-content: space-evenly;
     align-items: stretch;
     background-color: #031319;
-    border-radius: 4rem;
+    border-radius: 6rem;
     border: solid #ccc 0.4rem;
+    justify-items: center;
+
  }
 
  .cardGame div, .cardGame img{
@@ -234,16 +235,35 @@ header div h3{
 
  .cardGame .gameBanner{
     border: #ccc solid 0.4rem;
-    border-radius: 4rem;
+    border-radius: 6rem;
     grid-area: b;
  }
  .cardGame .gameInfo{
     grid-area: d;
     border: 0.4rem #ee0823 solid;
-    border-radius: 4rem;
+    border-radius: 6rem;
     color: #031319;
     padding: 3rem;
     background-color: #ccc;
+    position: relative;
+ }
+
+ .cardGame .gameInfo a{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee0823;
+    border-radius: 6rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    transition: all 1s ease;
+ }
+
+ .cardGame .gameInfo a:hover{
+     background-color: #031319;
+     color: #ee0823;
  }
 
  .cardGame .gameInfo .gameName{
@@ -257,3 +277,35 @@ header div h3{
      font-size: 1.8rem;
  }
 
+ 
+ @media(max-width: 1300px){
+     html{
+         font-size: 8px;
+        }
+        
+        .cardGame{
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr;
+            grid-template-areas: "b" "d";
+            justify-items: center;
+            max-width: 1000px;
+        }
+        
+        .cardGame div, .cardGame img{
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        }
+
+        .cardGame div{
+            margin-top: 0rem;
+
+        }
+}
+
+
+@media(max-width: 910px){
+    nav{
+        display: none;
+    }
+}
