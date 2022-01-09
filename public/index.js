@@ -4,4 +4,4 @@ function doFetch(url) {
     })   
 }
 
-fetch("https://itch.io/api/1/IxlsqUw1JInt9SsIi7tcEjxSyoDr006CjHrRWsCR/my-games").then(res => {console.log(res)})
+fetch("https://itch.io/api/1/jYczBr5szfluohoE2pa3718apIHiU7p7EZCTE8kX/my-games").then(res => {console.log(res)})
