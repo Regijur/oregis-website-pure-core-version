@@ -6,6 +6,10 @@
      font-family: 'Sarala', 'sans-serif';
 }
 
+html{
+    font-size: 10px;
+}
+
 .flex-collumn{
     display: flex;
     flex-direction: column;
@@ -22,10 +26,6 @@
     display: grid;
     grid-column: auto;
     grid-row: auto;
-}
-
-.withIndent{
-    text-indent: 10px;
 }
 
 h1, h2, h3{
@@ -55,8 +55,8 @@ main {
 }
 
 *{
-     margin: 0px;
-     padding: 0px;
+     margin: 0rem;
+     padding: 0rem;
      list-style: none;
      text-decoration: none;
      box-sizing: border-box;
@@ -75,8 +75,8 @@ header{
      height: auto;
      width: 100vw;
      background: linear-gradient(to bottom, #031319,  #010608);
-     padding: 10px 0px;
-     border-bottom: 5px solid #ee0823;
+     padding: 1rem 0rem;
+     border-bottom: 0.4rem solid #ee0823;
      color: #eee;
      flex-wrap: wrap;
      display: flex;
@@ -85,23 +85,25 @@ header{
      grid-area: header;
 }
 
-header .normal{
-     font-size: 14px;
+header .MyJobs{
+     font-size: 1.3rem;
      font-weight: 400;
+     text-transform: uppercase;
 }
 /* Link List */
 
 header ul{
      display: flex;
-     margin-right: 20px;
+     margin-right: 2rem;
 }
 
 header ul li a{
      display: block;
-     padding: 20px;
+     padding: 2rem;
      color: #ee0823;
-     font-size: 18pt;
+     font-size: 2rem;
      transition: color .4s ease;
+     text-transform: uppercase;
 }
 
 header ul li a:hover{
@@ -111,7 +113,7 @@ header ul li a:hover{
 /* Author Name */
 
 div .name{
-     padding-top: 15px;
+     padding-top: 2.5rem;
      color: #ee0823;
      font-size: 3rem;
      text-align: center;
@@ -122,15 +124,15 @@ header div{
 }
 
 header div h3{
-     margin-left: 20px;
+     margin-left: 3.0rem;
 }
 
  /*Footer*/
  footer {
-     border-top: solid 5px #031319;
+     border-top: solid 0.4rem #031319;
      height: auto;
      width: 100vw;
-     padding-top: 40px; 
+     padding-top: 4rem; 
      background-color: #ee0823;
      color: #eee;
      grid-area: footer;
@@ -153,9 +155,10 @@ header div h3{
 
  .footer-content p{
      max-width: 500px;
-     margin: 10px auto;
-     line-height: 28px;
-     font-size: 14px;
+     width: 100%;
+     margin: 1rem auto;
+     line-height: 2.8rem;
+     font-size: 1.4rem;
  }
 
  .social{
@@ -167,7 +170,7 @@ header div h3{
  }
 
  .social li{
-     margin: 0 10px;
+     margin: 0 1rem;
  }
 
  .social li a{
@@ -187,13 +190,13 @@ header div h3{
  .footer-bottom{
      width: 100vw;
      background-color: rgb(168, 3, 3);
-     padding: 20px 0px;
+     padding: 2rem 0rem;
      text-align: center;
  }
 
  .footer-bottom p{
-     font-size: 14px;
-     word-spacing: 2px;
+     font-size: 1.4rem;
+     word-spacing: 0.2rem;
      text-transform: capitalize;
  }
 
@@ -206,41 +209,51 @@ header div h3{
  /* Card Game */
  
  .cardGame{
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(autofit, 400px, 500px);
+    grid-template-rows: 1fr;
+    grid-template-areas: "b d";
     height: auto;
-    margin: 30px;
+    min-height: 600px;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 3rem;
+    align-self: center;
     justify-content: space-evenly;
     align-items: stretch;
     background-color: #031319;
-    border-radius: 40px;
-    border: solid #ccc 5px;
+    border-radius: 4rem;
+    border: solid #ccc 0.4rem;
  }
 
  .cardGame div, .cardGame img{
-     margin: 40px 20px;
+     margin: 4rem 2rem;
+     max-width: 500px;
+     width: 100%;
  }
 
  .cardGame .gameBanner{
-    height: 85vh;
-    border: #ccc solid 5px;
-    border-radius: 40px;
+    border: #ccc solid 0.4rem;
+    border-radius: 4rem;
+    grid-area: b;
  }
  .cardGame .gameInfo{
-    border: 5px #ee0823 solid;
-    border-radius: 40px;
-    height: 85vh;
+    grid-area: d;
+    border: 0.4rem #ee0823 solid;
+    border-radius: 4rem;
     color: #031319;
-    max-width: 700px;
-    padding: 30px;
+    padding: 3rem;
     background-color: #ccc;
  }
 
  .cardGame .gameInfo .gameName{
      text-align: center;
-     padding-bottom: 15px;
-     font-size: 1.5rem;
+     padding-bottom: 1.5rem;
+     font-size: 2.4rem;
  }
 
  .cardGame .gameInfo .gameDescription{
      text-align: justify;
+     font-size: 1.8rem;
  }
+
