@@ -1,6 +1,8 @@
-const key = process.env.ITCHIO_KEY
+import returnKey from '../key'
 
-let mygames = fetch(`https://itch.io/api/1/${key}/my-games`)
+const itchKey = returnKey
+
+let mygames = fetch(`https://itch.io/api/1/${itchKey}/my-games`)
     .then(res => res.json())
     .then(res => res.games)
 
