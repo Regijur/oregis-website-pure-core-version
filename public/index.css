@@ -102,7 +102,7 @@ header ul li a{
      display: block;
      padding: 2rem;
      color: #ee0823;
-     font-size: 2rem;
+     font-size: 1.8rem;
      transition: color .4s ease;
      text-transform: uppercase;
 }
@@ -273,21 +273,25 @@ header div h3{
      font-size: 2.4rem;
  }
 
+ .cardGame .gameInfo{
+    position: relative;
+ }
  .cardGame .gameInfo .gameDescription{
      text-align: justify;
      font-size: 1.8rem;
  }
 
+ /*Media Queries*/
  
- @media(max-width: 1300px){
-     html{
-         font-size: 8px;
+@media(max-width: 1120px){
+    
+        html{
+            font-size: 8px;
         }
-        
         .cardGame{
             grid-template-rows: auto auto;
             grid-template-columns: 1fr;
-            grid-template-areas: "b" "d";
+            grid-template-areas: "b" "d" ;
             justify-items: center;
             max-width: 1000px;
         }
@@ -296,11 +300,23 @@ header div h3{
             max-width: 800px;
             width: 100%;
             height: auto;
+            margin: 4rem 0rem;
         }
 
         .cardGame div{
             margin-top: 0rem;
 
+        }
+
+        .cardGame .gameInfo{
+            display: flex;
+            flex-direction: column;
+        }
+        .cardGame .gameInfo a{
+            position: static;
+            max-width: max-content;
+            align-self: center;
+            margin-top: 3rem;
         }
 }
 
@@ -308,5 +324,11 @@ header div h3{
 @media(max-width: 910px){
     nav{
         display: none;
+    }
+}
+
+@media(max-width: 425px){
+    .cardGame div, .cardGame img{
+        margin: 4rem 0rem;
     }
 }
