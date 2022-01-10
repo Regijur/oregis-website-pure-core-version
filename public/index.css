@@ -52,7 +52,7 @@ article {
 
 main {
     grid-area: main;
-}
+    align-content: center;}
 
 *{
      margin: 0rem;
@@ -215,9 +215,10 @@ header div h3{
     grid-template-rows: 1fr;
     grid-template-areas: "b d";
     height: auto;
-    min-height: 600px;
+    min-height: 400px;
     width: 95vw;
     margin: 3rem 0rem;
+    padding: 4rem 4rem;
     align-self: center;
     align-items: stretch;
     background-color: #031319;
@@ -228,12 +229,12 @@ header div h3{
  }
 
  .cardGame div, .cardGame img{
-     margin: 4rem 2rem;
-     max-width: 500px;
      width: 100%;
- }
-
- .cardGame .gameBanner{
+    }
+    
+    .cardGame .gameBanner{
+    max-width: 473px;
+    max-height: 375px;
     border: #ccc solid 0.4rem;
     border-radius: 6rem;
     grid-area: b;
