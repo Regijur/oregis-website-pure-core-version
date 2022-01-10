@@ -281,6 +281,22 @@ header div h3{
      font-size: 1.8rem;
  }
 
+ /*First Message*/
+ .about{
+     width: 100%;
+     max-width: 1000px;
+     background-color: #ddd;
+     border: inset #ee0823 0.8rem;
+     border-radius: 6rem;
+     color: #011319;
+     text-align: justify;
+     padding: 5rem;
+     align-self: center;
+     font-size: 1.6rem;
+     margin-top: 3rem;
+     line-height: 3.5rem;
+ }
+
  /*Media Queries*/
  
 @media(max-width: 1120px){

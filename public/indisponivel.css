@@ -9,27 +9,24 @@
 
 a{
     text-decoration: none;
-    color: #ee0823;
+    color: #880817;
     transition: color .8s ease;
-}
-
-a:hover{
-    color: #0c2731;
+    font-weight: bold;
 }
 
 h2{
-    padding: 20px 0px;
+    padding: 1rem 0rem 0.7rem 0rem;
 }
 
 p{
-    text-indent: 20px;
-    padding: 0px 150px;
-    padding-bottom: 20px;
+    text-indent: 2rem;
+    padding: 0rem 10rem;
+    padding-bottom: 2rem;
     text-align: justify;
 }
 
 body{
-    color: #ee0823;
+    color: #0c2731;
     background-color: #0c2731;
     text-align: center;
     justify-content: center;
@@ -40,8 +37,24 @@ body{
 
 .Equi{
     background-color: #bbb;
-    border-radius: 40px;
-    border: #ee0823 solid 5px;
-    margin: 50px 200px;
+    border-radius: 6rem;
+    border: #ee0823 solid 0.8rem;
+    max-width: 1000px;
+    margin-top: 6rem;
 }
 
+@media(max-width: 1000px){
+    .Equi{
+        max-width: 500px;
+    }
+    p{
+        padding: 3rem;
+        padding-top: 0rem;
+    }
+}
+
+@media(max-width: 500px){
+    .Equi{
+        max-width: 450px;
+    }
+}
