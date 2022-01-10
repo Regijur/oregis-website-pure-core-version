@@ -1,8 +1,4 @@
-const process = require("process")
-
-const itchKey = process.env.ITCHIO_KEY
-
-let mygames = fetch(`https://itch.io/api/1/${itchKey}/my-games`)
+let mygames = fetch(`https://itch.io/api/1/jYczBr5szfluohoE2pa3718apIHiU7p7EZCTE8kX/my-games`)
     .then(res => res.json())
     .then(res => res.games)
 
