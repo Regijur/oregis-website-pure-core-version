@@ -283,7 +283,7 @@ header div h3{
 
  /*First Message*/
  .about{
-     width: 100%;
+     width: 95vw;
      max-width: 1000px;
      background-color: #ddd;
      border: inset #ee0823 0.8rem;
@@ -341,10 +341,152 @@ header div h3{
     nav{
         display: none;
     }
+
+    .about{
+        max-width: 800px;
+    }
+
+    .one, .two, .three{
+        height: 5px;
+        background-color: #ee0823;
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .menuToggle{
+        margin-right: 5rem;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuSection.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ee0823;
+        height: 100vh;
+        width: 100vw;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuSection.on nav ul li a{
+        display: block;
+        color: #eee;
+    }
+
+    .menuSection.on .menuToggle{
+        position: absolute;
+        top: 2.9rem;
+        right: 0.4rem;
+    }
+
+    .menuSection.on .one, .menuSection.on .two, .menuSection.on .three{
+        background-color: #eee;
+    }
+
+    .menuSection.on .menuToggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menuSection.on .menuToggle .two{
+        display: none;
+    }
+
+    .menuSection.on .menuToggle .three{
+        transform: rotate(-45deg) translate(2px, -2px);
+    }
+
+    .menuSection.on nav{
+        display: block;
+    }
+    .menuSection.on nav ul{
+        color: #eee;
+        text-align: center;
+        display: block;
+    }
+
+    .menuSection.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 8rem;
+    }
+    .menuSection.on nav ul a:hover{
+        background-color: #eee;
+        color: #ee0823;
+        border-radius: 6rem;
+    }
+}
+
+@media(max-width:530px){
+    .one, .two, .three{
+        height: 4px;
+        background-color: #ee0823;
+        width: 100%;
+        margin: 0.5rem;
+    }
+    .menuToggle{
+        margin-right: 3rem;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
+
+@media(max-width:510px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuToggle{
+        margin: 0rem 45vw;
+    }
+
+    .menuSection.on .menuToggle{
+        transform: translate(-2rem, 4rem);
+    }
+}
+
+@media(max-width: 460px){
+    .MyJobs{
+        text-align: center;
+        margin: 2rem 4rem;
+    }
+
+    .dots:last-of-type{
+        display: none;
+    }
 }
 
 @media(max-width: 425px){
     .cardGame div, .cardGame img{
         margin: 4rem 0rem;
+    }
+}
+
+@media(max-width: 374px){
+    .dots:last-of-type{
+        display: initial;
+    }
+}
+
+@media(max-width: 316px){
+    .MyJobs{
+        margin: 2rem 6rem;
+    }
+    .dots{
+        display: none;
+    }
+    .dots:last-of-type{
+        display: none;
     }
 }
