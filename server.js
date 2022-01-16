@@ -21,4 +21,4 @@ http.createServer((req, res)=>{
             res.end(content)
         }
     )
-}).listen(5000, () => console.log('Manda bala gay'))
+}).listen(5000)

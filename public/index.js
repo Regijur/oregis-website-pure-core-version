@@ -1,4 +1,5 @@
-let mygames = fetch(`https://itch.io/api/1/jYczBr5szfluohoE2pa3718apIHiU7p7EZCTE8kX/my-games`)
+// Na linha abaixo é necessário substituir a KEY pela chave fornecida pelo Itch.io na aplicação OAuth
+let mygames = fetch(`https://itch.io/api/1/${KEY}/my-games`)
     .then(res => res.json())
     .then(res => res.games)
 

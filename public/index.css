@@ -4,6 +4,7 @@
 /* General */
 *{
      font-family: 'Sarala', 'sans-serif';
+     box-sizing: border-box;
 }
 
 html{
