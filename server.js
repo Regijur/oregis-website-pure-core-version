@@ -3,8 +3,6 @@ const fs = require('fs')
 const path = require('path')
 const { extname } = require('path')
 
-const key = process.env.ITCHIO_KEY
-
 http.createServer((req, res)=>{
     const file = req.url === '/' ? 'index.html' : req.url
     const filePath = path.join(__dirname, 'public', file)
