@@ -1,1 +1,2 @@
-#Olá
+# Primeira versão do meu portfólio online
+> O projeto é a primeira versão do meu portifólio em formato de site que eu criei, utilizando Javascript, HTML e CSS puros, sem a utilização de frameworks, o site também consome a API do Itch.io e atualiza os dados automaticamente a partir do momento em que eu publico um novo jogo no meu perfil no Itch.io, portanto para adicionar novos jogos publicados na plataforma Itch.io eu não preciso atualizar o código fonte do site, as informações são consumidas direto pela API, em seguida eu acabei criando outra versão utilizando React JS, Next JS e Axios, a versão atualizada está disponível em: https://oregis.dev.br
